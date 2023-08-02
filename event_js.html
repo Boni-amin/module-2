@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Event </title>
+</head>
+<body onload="myEvent('My page load done')">
+    
+    <button onclick="myEvent('Click Done')">Click</button>
+    <button onmouseover="myEvent('hover Done')">hover</button>
+    <button onmouseout="myEvent('out Done')">out</button>
+
+    </br>
+     
+
+    <input type="text" onchange="myEvent('Chanege hoice')"> </br>
+    <input type="text" onkeydown="myEvent('key down hoice')"> </br>
+    <input type="text" onkeyup="myEvent('keyup hoice')"> </br>
+
+      <script>
+
+        function myEvent(msg){
+            console.log(msg)
+            
+        }
+
+      </script>
+</body>
+</html>

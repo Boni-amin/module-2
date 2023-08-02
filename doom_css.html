@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom Css</title>
+    <style>
+        .h1Tag{
+            color: red;
+            background-color: gold;
+            font-size: 16px;
+            padding: 25px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1 id="myColorId">Bangladesh is my Mother land</h1>
+
+    <br>
+    <br>
+    
+    <button onclick="addStyle()">Add style</button>
+    <button onclick="removeStyle()">remove style</button>
+
+
+    <script>
+
+        function addStyle(){
+           let h1tag = document.getElementById('myColorId')
+           h1tag.classList.add('h1Tag')
+        }
+
+        function removeStyle(){
+           let h1tag = document.getElementById('myColorId')
+           h1tag.classList.remove('h1Tag')
+        }
+
+    </script>
+</body>
+</html>

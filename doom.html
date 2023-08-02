@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Doom</title>
+</head>
+<body>
+    
+    <!--
+         <h1 id="myId"> </h1>
+    <h2 class="myClass"></h2>
+    <h3 class="myClass"></h3>
+    <h4 class="myClass"></h4>
+    <h5 name="nameclass">  </h5>
+    <p></p>
+     -->
+
+
+     <!-- 
+        <p></p>
+        <button onclick="demo()">Click</button> 
+    -->
+
+    <script>
+
+        // document.getElementById("myId").innerHTML = "This is heading tag";
+        // document.getElementsByClassName("myClass")[2].innerHTML = "This is heading";
+
+        // document.getElementsByName("nameclass")[0].innerHTML = "this is ok";  // Here must be include index numbar -- [0]
+
+        // document.getElementsByTagName("p")[0].innerHTML = "This is para tag"   // Here must be include index numbar -- [0]
+
+        function demo(){
+            // const info = document.cookie;
+            // const info = document.domain;
+            // const info = document.lastModified;
+            // const info = document.title;
+            const info = document.URL;
+
+            document.getElementsByTagName('p')[0].innerHTML = info;
+        }
+
+
+
+    </script>
+</body>
+</html>

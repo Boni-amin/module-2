@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append child</title>
+</head>
+<body>
+    <h1>Write Here English latter ☞ </h1>
+    <ul id="myItems">
+        <li> A </li>
+    </ul> <br><br>
+
+    <input type="text" name="" id="myId"> <br>
+    <button onclick="addItems()">Add item</button>
+    <br><br>
+
+    <img id="imgAttr" src="" alt="" width="200px" height="200px">
+
+    <button onclick="changeAtribute()">change attr</button>
+
+    <script>
+        /*
+        function addItems() {
+           let itemValue = document.getElementById('myId').value;
+           let listItem = document.createElement('li');
+
+           listItem.innerHTML = itemValue;
+           
+           let myitems = document.getElementById('myItems');
+           myitems.appendChild(listItem);
+        }
+        */
+
+        function changeAtribute() {
+            let myImg = document.getElementById('imgAttr')
+            myImg.width='100'
+            myImg.height = '100'
+            console.log('ok attr') 
+
+        }
+
+
+    </script>
+</body>
+</html>

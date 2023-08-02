@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom replace</title>
+</head>
+<body>
+    
+
+    <button onclick="demo()">Try it</button>
+    <button onclick="demo2()">Try it</button>
+    <br>
+    <br>
+
+    <input type="text" id="num1"></br>
+    <input type="text" id="num2"></br>
+
+    <button onclick="addToNumbar()">Add</button>
+    <br>
+    <h2 id="heres"></h2>
+
+    <script>
+        /*
+
+        // Doom replace 
+
+        function demo(){
+            document.open('text/html', 'replace');
+            document.write('<h1> Replace text done </h1>');
+            document.close();
+        }
+        */
+
+          
+        // Doom new window open and write  
+        function demo(){
+           let w = window.open()
+           w.document.open()
+           w.document.write('Hello New window . Welcome ')
+           w.document.close;
+        }
+
+        function demo2(){
+            let myitems = document.getElementsByTagName('button').length;
+            alert(myitems)
+            document.write(myitems)
+
+        }
+
+        function addToNumbar(){
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+
+            let result = parseFloat(num1) + parseFloat(num2)
+            document.getElementById('heres').innerHTML = "result is " + result;
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quary selector </title>
+</head>
+<body>
+    
+    <h1>h1 tag</h1>
+    <h2 id="h2tag">h2 tag</h2>
+    <h3 class="h3tag">h3</h3>
+    <p name="ptag" >p tag</p>
+
+    <button onclick="ChangeQuary()">Change Button</button>
+
+
+    <script>
+        function ChangeQuary() {
+            document.querySelector('h1').innerHTML = "This is h1 tag";
+            document.querySelector('#h2tag').innerHTML = "This is h2 tag";
+            document.querySelector('.h3tag').innerHTML = "This is h3 tag";
+            document.querySelector('p[name]').innerHTML = "This is p tag";
+        }
+    </script>
+
+</body>
+</html>

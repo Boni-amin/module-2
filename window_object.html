@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+</head>
+<body>
+    
+    <Button onclick="objPrompt()">Click</Button>
+
+    <script>
+
+        function objAlert() {
+            alert("Save Success")
+        }
+
+
+        function objConfirm() {
+            const result = confirm("Do you want delete") // Result true / fulse
+            document.write(result)
+        }
+
+        function objPrompt() {
+            const result = prompt("Write Your Name ") // Result Name / Null
+            document.write(result)
+        }
+
+        function objOPen() {
+           open()
+        }
+
+        function objClose() {
+           close()
+        }
+
+    </script>
+
+</body>
+</html>
