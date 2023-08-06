@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Api</title>
+</head>
+<body>
+    
+    <!-- 
+        # Request Response Mnodel 
+            1. HTTP request
+            1. HTTP response
+
+        
+        # Javascript Ajax 
+            1. What is Backend api --- (Backend system. When call api)
+            2. Api doc ---- (Api er Backend Doc. ex..... All data)
+            3. Postman ---- (It is tool for Make api doc . for parctic)
+            4. Javascript Ajax ---(Browser Teke Server site a request sent and requset get er jonno Amra Javascript er je Prokriya use kori Take Ajax Bole.) 
+            # Ajax Use For 2 System.
+                1. Build in XMLHttp Requset --- (OLd Not Use)
+                2. Build in Fetch --- (Latest)
+                                    1. Package JQuery Ajax --- (Not use)
+                                    2.Package Axios --- (Latest , Details Explane);
+
+
+            
+             4. Javascript Fetch : ---Methhood
+                1. Using Fetch Async-Await Strategy
+                1. Using Fetch Promises Strategy
+
+
+            4. Javascript Axios : ---Methhood
+                1. Using Axios Async-Await Strategy
+                1. Using Axios Promises Strategy
+
+
+        # What is Plain text?
+        # What is Axios? --- (Axios is a promise-based HTTP Client for node.js and the browser.)
+        # Code minify and unminify ?
+           
+        
+    -->
+
+
+<!-- HTML -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+           
+        
+
+        // let URL = "https://crud.teamrabbil.com/api/v1/ReadProduct" ;
+        // let URL = "https://crud.teamrabbil.com/api/v1/ReadProduct" ;
+
+       
+        /*
+        // ### Using Fetch Async-Await Strategy
+        async function requestUsingAsync (){
+            
+            let res = await fetch (URL)
+            let JsonData = await res.json();
+            let JsonDataStringify = JSON.stringify(JsonData); 
+
+            document.write(JsonDataStringify)
+            // console.log(res)
+        }
+        // requestUsingAsync();
+        
+
+        // ### Using Fetch Promises Strategy
+        function requestUsingPromises (){
+            fetch(URL)
+            .then(res=>res.json())
+            // .then(jsonData=>document.write(JSON.stringify(jsonData)))
+
+            .then(jsonData=>JSON.stringify(jsonData))
+            .then(result=>document.write(result))
+            
+        }
+        // requestUsingPromises() 
+
+       
+
+
+        // ### Using Axios Async-Await Strategy
+        // requestUsingAsyncAxios()
+        async function requestUsingAsyncAxios(){
+
+            let res = await axios.get(URL)
+            let JsonData = res.data;
+
+            document.write(JSON.stringify(JsonData))
+        }
+
+        
+
+        // ### Using Axios Promises Strategy
+        requestUsingPeomisesAxios()
+        function requestUsingPeomisesAxios(){
+
+            axios.get(URL)
+                .then(res=>res.data)
+                .then(JsonData=>document.write(JSON.stringify(JsonData)))
+           
+        }
+       
+
+
+        SimpleAxiosGet()
+        function SimpleAxiosGet(){
+            axios.get(URL).then(res=>{
+                let jsonData =res.data;
+                document.write(JSON.stringify(jsonData))
+            })
+        }
+
+        
+        */
+
+     
+        async function AsyncGetMathood (){
+            let res = await fetch ("https://jsonplaceholder.typicode.com/posts")
+            let JsonData = await res.json();
+            let JsonDataStringify = JSON.stringify(JsonData); 
+
+            document.write(JsonDataStringify)
+            console.log(JsonDataStringify)
+        }
+        AsyncGetMathood()
+
+
+
+
+
+    </script>
+</body>
+</html>

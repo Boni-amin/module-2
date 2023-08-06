@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live class 1</title>
+    <style>
+        video{
+            border: 2px solid green;
+        }
+    </style>
 </head>
 <body>
     
 
-
+    <video id="vide" src="" width="200px" height="200px" autoplay></video>
 
 
     <script>
 
+        /*
+        // Get my Location with Navigator
 
         navigator.geolocation.getCurrentPosition(function (position){
             let lat = position.coords.latitude;
@@ -21,6 +28,28 @@
             document.write("lat=" +lat+ "</br>")
             document.write("long=" +long+ "</br>")
         })
+       
+
+
+        // Web Camera on 
+
+        navigator.mediaDevices.getUserMedia({
+            video: true, 
+            audio: true,
+            video:{
+                facingMode:"envirment"
+            }
+        }).then(function (videoData){
+            let vid = document.getElementById('vide')
+            vid.srcObject = videoData;
+        })
+
+         */ 
+
+
+
+        //  document.write(navigator.appCodeName)
+         document.write(navigator.onLine)
 
 
     </script>
