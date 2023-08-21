@@ -10,11 +10,9 @@ json file = "start-dev": "nodemon example.js"
 npm run start-dev
 
 
-new file .gitignore
+new file .gitignore (node_modules)
 
 git remote -v for link
-
-
 
 
 */
